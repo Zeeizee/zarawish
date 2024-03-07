@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sliderImages = ["img1.jpg", "img2.jpg", "img3.jpg","img4.jpg","img5.jpg"]; // Add more images as needed
+        var currentImageIndex = 0;
+      
+        function changeImage() {
+          currentImageIndex = (currentImageIndex + 1) % sliderImages.length;
+          document.getElementById('slider-image').src = sliderImages[currentImageIndex];
+        }
+      
+        // Change image every 5000 milliseconds (5 seconds)
+        setInterval(changeImage, 3000);
+      </script>
+
+
+<center>
+    <div style="width:60%; display: flex;justify-content: center;">
+        <img src="img1.jpg" style="width:20%" alt="">
+        <img src="img2.jpg" style="width:20%" alt="">
+        <img src="img3.jpg" style="width:20%" alt="">
+        <img src="img4.jpg" style="width:20%" alt="">
+        <img src="img5.jpg" style="width:20%" alt="">
+       
+    </div>
+</center>
+<div class="main">Tap to open the card</div>
+ <div class="main"> <div class="birthdayCard">
+    <div class="cardFront">
+      <div class="front-text" style="color:black">
+      <h3 class="happy">HAPPY</h3>
+      <h2 class="bday">BIRTHDAY</h2> 
+      <h3 class="toyou">ZARA</h3>  
+      </div>
+      <div class="wrap-deco">
+    <div class="decorations"></div>
+    <div class="decorationsTwo"></div>
+      </div> 
+        <div class="wrap-decoTwo">
+    <div class="decorations"></div>
+    <div class="decorationsThree"></div>
+      </div>
+      <div class="plate">
+        <div class="cake"></div>
+        <div class="flame"></div>
+      </div>
+    </div>
+      
+      <div class="cardInside">
+         <div class="inside-text">
+      <h3 class="happy">HAPPY</h3>
+      <h2 class="bday">BIRTHDAY</h2> 
+      <h3 class="toyou">to you!</h3>  
+      </div>
+        <div class="wishes">
+        <p>Dear Zara,</p>
+        <p>I hope your special day is as special as you! Happy birthday, daughter.</p>
+        <p class="">From</p>
+        <p class="">MAMU MAMI & ASMAD</p>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
